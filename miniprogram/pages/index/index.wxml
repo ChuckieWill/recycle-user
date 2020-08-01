@@ -1,0 +1,23 @@
+<!-- 1.搜索框 -->
+<w-searchbar isnavigator="{{true}}"/>
+
+<!-- 2.轮播图 -->
+
+<w-swiper list="{{slideshowList}}" bind:imageload="handleImageLoad"/>
+
+
+
+<!-- 3.书籍列表分类 -->
+<w-tab-control titles="{{tabcontrol}}" 
+               bind:tabclick="handleTabcontrol"
+               id = "tab-control"
+               class="{{isTabFixed ? 'fixed' : ''}}"
+/>
+<!-- 占位 -->
+<w-tab-control titles="{{tabcontrol}}" wx:if="{{isTabFixed}}"/>
+
+<!--4.书籍列表  -->
+<w-books book_list="{{books[currentType].list}}"/>
+
+<!-- 5.回到顶部 -->
+<w-back-top  wx:if="{{showBackTop}}"/>

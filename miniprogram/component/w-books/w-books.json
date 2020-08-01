@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-card": "vant-weapp/card",
+    "van-tag": "vant-weapp/tag",
+    "van-button": "vant-weapp/button"
+  }
+}

@@ -1,0 +1,4 @@
+/* pages/profile/profile.wxss */
+.gaunnavig{
+  text-align: center
+}

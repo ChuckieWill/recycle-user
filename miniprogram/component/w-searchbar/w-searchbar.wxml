@@ -1,0 +1,15 @@
+<!--component/searchbar/searchbar.wxml-->
+<view class="search">
+   <view class="searchbar">
+      <navigator  wx:if="{{isnavigator}}"
+                  class="search-navigator" 
+                  url="/pages/search/search">书名/作者/ISBN
+            </navigator>
+      <input wx:else
+             class="searchinput"
+             placeholder="书名/作者/ISBN"></input>
+      <image class="scanimage" 
+            src="/assets/comment/scancode.png"
+            bindtap="handlescan"/>
+    </view>
+</view>

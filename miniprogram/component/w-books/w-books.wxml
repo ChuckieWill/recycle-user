@@ -1,0 +1,26 @@
+<!--component/books/books.wxml-->
+<wxs module="filters" src="addmul.wxs"></wxs>
+<view>
+  <block wx:for="{{book_list}}" wx:key="index">
+    <van-card 
+    id ="card"
+    origin-price="{{ item.result.price }}" 
+    price="{{filters.toFix(item.result.price*0.2)}}" 
+    desc="{{ item.result.author }}  " 
+    title="{{ item.result.title }}" 
+    thumb="{{ item.result.pic }}">
+      <view slot="tags">
+        <view class="tags">{{item.result.publisher}}</view>
+        <van-tag plain type="danger">2折</van-tag>  
+      </view>
+       <view slot="footer">
+          <van-button size="mini" 
+                      plain 
+                      type="primary"
+                      bind:click="handleCard"
+                      data-id="{{item._id}}"
+                      >查看详情</van-button>     
+  </view>
+    </van-card>
+  </block>
+</view>

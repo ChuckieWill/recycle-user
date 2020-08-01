@@ -1,0 +1,12 @@
+/* comments/w-swiper/w-swiper.wxss */
+.swiper{
+  margin: 10rpx 20rpx;
+  /* border-radius: 20rpx; */
+}
+
+/* .swiper-item{
+  
+} */
+.swiper-item image{
+  width:100%;
+}

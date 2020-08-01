@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index" ,
+    "pages/sell/sell",
+    "pages/shop/shop",
+     "pages/profile/profile",
+    "pages/scanCode/scanCode",
+    "pages/bookDetail/bookDetail",
+    "pages/search/search"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "易书",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#08c161",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/tab/home.png",
+        "selectedIconPath": "assets/tab/home_active.png"
+      },
+      {
+        "pagePath": "pages/sell/sell",
+        "text": "卖书",
+        "iconPath": "assets/tab/book.png",
+        "selectedIconPath": "assets/tab/book_active.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "购物车",
+        "iconPath": "assets/tab/buy.png",
+        "selectedIconPath": "assets/tab/buy_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/tab/me.png",
+        "selectedIconPath": "assets/tab/me_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+ 
+}

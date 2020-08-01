@@ -1,0 +1,10 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "w-books": "/component/w-books/w-books",
+    "w-searchbar": "/component/w-searchbar/w-searchbar",
+    "w-swiper": "/component/w-swiper/w-swiper",
+    "w-tab-control": "/component/w-tab-control/w-tab-control",
+    "w-back-top": "/component/w-back-top/w-back-top"
+  }
+}

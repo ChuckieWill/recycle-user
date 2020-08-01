@@ -1,0 +1,47 @@
+<!--pages/scanCode/scanCode.wxml-->
+<w-books book_list="{{book_list}}"/>
+
+<view wx:if="{{!bookshow}}">
+  <input class="input" bindinput="inputIsbn" placeholder="手动输入ISBN" ></input>
+  <button bindtap="handleInputCode">确定</button>
+  <button bindtap="handleScanCode"
+        >扫码加书</button>
+</view>
+
+<view wx:if="{{bookshow}}">
+  <text>选择书籍类型</text>
+  <checkbox-group bindchange="choosetitle">
+    <block wx:for="{{titles}}" wx:key="index">
+      <checkbox value="{{item}}">{{item}}</checkbox>
+    </block> 
+  </checkbox-group>
+
+  <text>可回收情况</text>
+  <checkbox-group bindchange="chooserecyle">
+    <block wx:for="{{recyles}}" wx:key="index">
+      <checkbox value="{{item}}">{{item}}</checkbox>
+    </block> 
+  </checkbox-group>
+
+  <text>总数</text>
+  <input class="input" bindinput="inputnum" placeholder="0" ></input>
+  <text>新书数量</text>
+  <input class="input" bindinput="inputnewnum" placeholder="0" ></input>
+  <text>品相一般数量</text>
+  <input class="input" bindinput="inputmednum" placeholder="0" ></input>
+  <text>品相良好数量</text>
+  <input class="input" bindinput="inputgoodnum" placeholder="0" ></input>
+  <button bindtap="handleUpbook">上架书籍</button>
+</view>
+
+<!-- 上传轮播图 -->
+<view class="slideshow">
+  <view wx:for="{{slideshowList}}" wx:key="index" class="slideimage" >
+    <image src="{{item}}"  mode="widthFix"></image>
+    <view class="delect-img">
+      <image src="/assets/comment/delect.png" class="img"></image>
+    </view>
+  </view>
+</view>
+<button  bindtap="selectslideimage">选择图片</button>
+<button  bindtap="upslideimage">上传轮播图</button>

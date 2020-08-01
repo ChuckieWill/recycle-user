@@ -1,0 +1,2 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<van-button  size="mini"  plain type="primary">朴素按钮</van-button>

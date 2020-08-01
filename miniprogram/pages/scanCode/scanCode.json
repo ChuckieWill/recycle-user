@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-button": "vant-weapp/button",
+    "van-row": "vant-weapp/row",
+    "van-col": "vant-weapp/col",
+    "w-swiper": "/component/w-swiper/w-swiper",
+    "w-books": "/component/w-books/w-books"
+  }
+}

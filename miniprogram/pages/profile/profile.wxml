@@ -1,0 +1,3 @@
+<!--pages/profile/profile.wxml-->
+
+<navigator url="/pages/scanCode/scanCode" class="gaunnavig">管理端</navigator>
